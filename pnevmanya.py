@@ -4,6 +4,9 @@ import pathlib
 temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 import plotly.express as px
+import platform
+plt = platform.system()
+if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 
 
 st.title("Pnevmanya kassalligini aniqlash")
