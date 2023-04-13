@@ -9,7 +9,7 @@ plt = platform.system()
 if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 
 
-st.title("Pnevmanya kassalligini aniqlash")
+st.title("Pnevmanya kasalligini aniqlash")
 
 #rasm yuklash
 file = st.file_uploader("Rengen natijasini yuklang", type=['jpeg','png','gif','svg','jpg'])
